@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tohoma";
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page {
+    width: 80mm;
+    overflow:hidden;
+/*    min-height:148mm;*/
+    padding: 0.2cm;
+    margin-left:auto;
+    margin-right:auto;
+    background: white;
+
+}
+.subpage {
+    padding: 1cm;
+    border: 5px red solid;
+    height: 237mm;
+    outline: 2cm #FFEAEA solid;
+}
+
+button {
+    width:100px;
+    height: 24px;
+}
+.header {
+    overflow:hidden;
+}
+.logo {
+    background-color:#FFFFFF;
+    text-align:left;
+    float:left;
+}
+.company {
+    padding-top:24px;
+    text-transform:uppercase;
+    background-color:#FFFFFF;
+    text-align:right;
+    float:right;
+    font-size:12px;
+}
+.title {
+    text-align:center;
+    position:relative;
+    color:#000000;
+    font-size: 24px;
+    top:1px;
+}
+.footer-left {
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:13px;
+    position:relative;
+
+    width:50%;
+    color:#000;
+    float:left;
+    font-size: 12px;
+    bottom:1px;
+}
+.footer-left1 {
+    text-align:left;
+line-height: 1.5;
+
+    position:relative;
+
+    width:50%;
+    color:#000;
+    float:left;
+    font-size: 12px;
+    bottom:1px;
+}
+.footer-left2 {
+    text-align:left;
+
+    position:relative;
+    width:100%;
+    color:#000;
+    float:left;
+    font-size: 12px;
+    bottom:1px;
+}
+.footer-right {
+    text-align:center;
+    text-transform:uppercase;
+    padding-top:10px;
+    position:relative;
+    height: 150px;
+    width:50%;
+    color:#000;
+    font-size: 12px;
+    float:left;
+    bottom:1px;
+}
+.footer-right1 {
+    text-align:right;
+line-height: 1.5;
+
+    position:relative;
+
+    width:50%;
+    color:#000;
+    font-size: 12px;
+    float:right;
+    bottom:1px;
+}
+.TableData {
+    background:#ffffff;
+    font: 11px;
+    width:100%;
+    border-collapse:collapse;
+    
+    font-size:12px;
+    border:dotted 1px #ccc;
+
+}
+.TableData TH {
+    background: rgba(0,0,255,0.1);
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    border: dotted 1px #ccc;
+    height: 24px;
+}
+.TableData TR {
+    height: 34px;
+    border:thin dotted #d3d3d3;
+}
+.TableData TR TD {
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size:12px;
+    border:thin dotted #d3d3d3;
+}
+.TableData1 {
+    background:#ffffff;
+    width:100%;
+    border-collapse:collapse;
+    
+    font-size:12px;
+    border:none;
+}
+

@@ -1,0 +1,11 @@
+.anh_hh{
+	height: 160px;
+	overflow: hidden;
+}
+
+.anh_hh img{
+	width: 100%
+}
+.hang_hoa .thumbnail{
+	height: 350px;
+}
