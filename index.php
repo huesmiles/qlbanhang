@@ -20,7 +20,7 @@ if (isset($_POST['ngay_report'])) {
 <main>
   <!-- Báo cáo theo ngày -->
   <div class="container-fluid">
-    <h1 class="mt-4">Báo cáo ngày</h1>
+    <h2 class="mt-4">Báo cáo ngày</h2>
     <ol class="breadcrumb mb-4 d-flex justify-content-between align-items-center">
       <li class="breadcrumb-item active">Ngày: <?php echo $ngay_hientai; ?></li>
 
@@ -110,8 +110,18 @@ if (isset($_POST['ngay_report'])) {
     <div class="row">
       <!-- @TODO: Báo cáo theo năm -->
       <div class="col-xl-12">
-        <div class="card mb-4">
-          <!-- <div class="card-header d-flex align-items-center justify-content-between">
+        <h2 class="mt-4">Báo cáo theo năm</h2>
+        <ol class="breadcrumb mb-4 d-flex justify-content-between align-items-center">
+          <li class="breadcrumb-item active">Năm: <?php echo $namcanxem; ?></li>
+
+          <!-- Đổi nam report -->
+          <form action="" method="POST" id="namcanxem">
+            <input class="form-control" type="text" name="namcanxem" placeholder="Nhập năm cần xem" aria-label="Search" aria-describedby="basic-addon2" />
+          </form>
+        </ol>
+
+        <!-- <div class="card mb-4">
+          <div class="card-header d-flex align-items-center justify-content-between">
             <span>
               <i class="fas fa-table mr-1"></i>
               Lợi nhuận theo tháng - năm <?php echo $namcanxem ?>
@@ -119,7 +129,7 @@ if (isset($_POST['ngay_report'])) {
             <?php if ($namcanxem != date("Y")) : ?>
               <button class="btn btn-sm btn-primary">Xem năm nay</button>
             <?php endif ?>
-          </div> -->
+          </div>
 
           <div class="card-body">
             <div class="table-responsive">
@@ -131,8 +141,8 @@ if (isset($_POST['ngay_report'])) {
                   </div>
                 </div>
               </form>
-              <!-- <hr> -->
-              <!-- <table class="table table-bordered" width="100%" cellspacing="0">
+              <hr>
+              <table class="table table-bordered" width="100%" cellspacing="0">
                 <thead>
                   <tr>
                     <th>Tháng</th>
@@ -190,10 +200,10 @@ if (isset($_POST['ngay_report'])) {
                   <?php endfor; ?>
 
                 </tbody>
-              </table> -->
+              </table>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- Hết Báo cáo theo ngày -->
 
@@ -333,7 +343,9 @@ if (isset($_POST['ngay_report'])) {
       }
     }
   });
+</script>
 
+<script>
   // Xử lý người dùng thay đổi ngày report -> submit form để loại lại data mới theo ngày được chọn
   document.querySelector('input[name="ngay_report"]')
     .addEventListener('change', e => {
