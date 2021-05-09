@@ -13,5 +13,3 @@ foreach ($qr as $key => $hh) {
 }
 
 echo json_encode($datahh);
-
- ?>
